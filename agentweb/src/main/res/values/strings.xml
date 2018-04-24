@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AgentWeb</string>
+    <string name="url">http://172.29.213.1:8088/</string>
+</resources>

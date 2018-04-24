@@ -1,1 +1,1 @@
-include ':app', ':openlayer'
+include ':app', ':openlayer', ':mapbox', ':agentweb'

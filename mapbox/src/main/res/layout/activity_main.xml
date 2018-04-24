@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+         xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+         xmlns:tools="http://schemas.android.com/tools">
+<android.support.constraint.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        mapbox:layout_constraintBottom_toBottomOf="parent"
+        mapbox:layout_constraintEnd_toEndOf="parent"
+        mapbox:layout_constraintStart_toStartOf="parent"
+        mapbox:layout_constraintTop_toBottomOf="@+id/btnLocation"
+        mapbox:mapbox_cameraTargetLat="48.85819"
+        mapbox:mapbox_cameraTargetLng="2.29458"
+        mapbox:mapbox_cameraZoom="11"
+        mapbox:mapbox_styleUrl="mapbox://styles/mapbox/streets-v10"/>
+
+    <Button
+        android:id="@+id/btnLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="定位"
+        mapbox:layout_constraintStart_toStartOf="parent"
+        mapbox:layout_constraintTop_toTopOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
+</layout>
